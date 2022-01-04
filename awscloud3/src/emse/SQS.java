@@ -38,6 +38,10 @@ public class SQS {
             System.err.println(e.awsErrorDetails().errorMessage());
             System.exit(1);
         }
+	catch (SqsException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
         return "";
     }
 	
@@ -72,7 +76,7 @@ public class SQS {
         } catch (SqsException e) {
             System.err.println(e.awsErrorDetails().errorMessage());
             System.exit(1);
-        }
+	}
         return null;
     }
     
