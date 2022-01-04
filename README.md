@@ -11,7 +11,7 @@ The Worker is responsible for :
   - writing a file in the cloud
   - sending a message with the name of the file to the Client
   - waiting for another message
-  - 
+  
 The Client is responsible for :
   - reading the CSV file
   - uploading it into the cloud
